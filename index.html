@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover exclusive content on OnlyFans. Click to explore!">
+    <title>Exclusive Content</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #000 25%, #333 100%);
+            color: white;
+            text-align: center;
+            overflow-x: hidden; /* Menonaktifkan scroll horizontal */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* Menyelaraskan konten ke atas */
+            height: 100vh;
+            padding-top: 40px; /* Memberikan sedikit ruang di atas untuk konten */
+            width: 100%;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px; /* Mengurangi margin bawah agar lebih rapat */
+            color: #ff66b2;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .intro-text {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin-bottom: 25px; /* Menyesuaikan jarak antara deskripsi dan gambar */
+        }
+        .images-container {
+            display: flex;
+            justify-content: center; /* Menjaga gambar tetap di tengah */
+            gap: 15px;
+            max-width: 100%;
+            width: 100%;
+            flex-wrap: wrap;
+            margin-bottom: 30px; /* Memberikan jarak antara gambar dan tombol */
+        }
+        .image-card {
+            position: relative;
+            width: 180px; /* Ukuran gambar lebih kecil */
+            height: 180px; /* Menjaga aspek gambar tetap proporsional */
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .image-card:hover {
+            transform: scale(1.05);
+        }
+        .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3em;
+            color: #ff66b2;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 50%;
+            transition: opacity 0.3s ease;
+            opacity: 0.8;
+        }
+        .image-card:hover .play-icon {
+            opacity: 1;
+        }
+        .btn {
+            background-color: #ff66b2;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #ff3385;
+        }
+        .footer {
+            margin-top: 30px; /* Memberikan jarak lebih agar footer tidak terlalu dekat dengan tombol */
+            font-size: 0.9em;
+            color: #b3b3b3;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            .intro-text {
+                font-size: 1em;
+            }
+            .images-container {
+                justify-content: center; /* Menjaga gambar tetap di tengah untuk layar kecil */
+            }
+            .image-card {
+                width: 150px; /* Ukuran gambar lebih kecil pada perangkat mobile */
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Unlock Exclusive Content</h1>
+    <p class="intro-text">Discover unique photos, videos, and more. Tap to explore exclusive creators!</p>
+    <div class="images-container">
+        <a href="#" class="image-card" onclick="randomRedirect()">
+            <img src="1.jpg" alt="Exclusive Content 1">
+            <i class="fas fa-play-circle play-icon"></i>
+        </a>
+        <a href="#" class="image-card" onclick="randomRedirect()">
+            <img src="2.jpg" alt="Exclusive Content 2">
+            <i class="fas fa-play-circle play-icon"></i>
+        </a>
+        <a href="#" class="image-card" onclick="randomRedirect()">
+            <img src="3.jpg" alt="Exclusive Content 3">
+            <i class="fas fa-play-circle play-icon"></i>
+        </a>
+        <!-- Foto baru ditambahkan di sini -->
+        <a href="#" class="image-card" onclick="randomRedirect()">
+            <img src="4.jpg" alt="Exclusive Content 4">
+            <i class="fas fa-play-circle play-icon"></i>
+        </a>
+    </div>
+    <a href="#" class="btn" onclick="randomRedirect()">Start Exploring</a>
+    <div class="footer">Join the exclusive community today!</div>
+</div>
+<script>
+    function randomRedirect() {
+        let urls = [
+            'https://xtwphrh.mysweet-contactstimes.com/g2t2cdv?t=NARUTO&cid=SUPER_MARIO',
+            'https://vnanxl.happydatte.com/?utm_source=da57dc555e50572d&&ban=inst&j1=1&s1=226805&s2=2083622&s3=NARUTO&click_id=SUPER_MARIO'
+        ];
+        window.location.href = urls[Math.floor(Math.random() * urls.length)];
+    }
+
+    // Disable right-click context menu
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+
+    // Disable Ctrl + U and F12
+    document.addEventListener('keydown', function(e) {
+        if (e.ctrlKey && (e.key === 'u' || e.key === 'U')) {
+            e.preventDefault();
+        }
+        if (e.key === 'F12') {
+            e.preventDefault();
+        }
+    });
+</script>
+</body>
+</html>
